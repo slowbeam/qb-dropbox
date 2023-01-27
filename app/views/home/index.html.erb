@@ -1,6 +1,9 @@
-<h1> My Dropbox Folders </h1>
+<%= link_to("refresh auth token", dropbox_auth_path) %>
+<h1> Dropbox File Counts </h1>
 <ul>
-  <% @folders.each do |folder| %>
-    <li> <%= folder.name %> </li>
+  <% @file_type_counts.keys.each do |file_type| %>
+    <li>
+      <p>Extension: <b><%= file_type %></b><br> Count:<b><%= @file_type_counts[file_type] %></b></p>
+    </li>
   <% end %>
 </ul>

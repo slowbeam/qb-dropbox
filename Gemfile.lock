@@ -80,6 +80,10 @@ GEM
     concurrent-ruby (1.2.0)
     crass (1.0.6)
     date (3.3.3)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     dropbox_api (0.1.21)
       faraday (< 3.0)
       oauth2 (~> 1.1)
@@ -243,6 +247,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
+  dotenv-rails
   dropbox_api
   jbuilder (~> 2.7)
   listen (~> 3.3)

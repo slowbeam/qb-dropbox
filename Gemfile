@@ -35,6 +35,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Use Pry as your rails console (https://github.com/rweng/pry-rails)
   gem 'pry-rails'
+  # Autoload dotenv in Rails. (https://github.com/bkeepers/dotenv)
+  gem 'dotenv-rails'
 end
 
 group :development do

@@ -23,10 +23,7 @@ class DropboxController < ApplicationController
   private
 
   def authenticator
-    client_id = 'ts68n062q7jl4uh'
-    client_secret = 'uvrcd0m3crbvcy5'
-
-    @_authenticator ||= DropboxApi::Authenticator.new(client_id, client_secret)
+    @_authenticator ||= DropboxApi::Authenticator.new(ENV["CLIENT_ID"], ENV["CLIENT_SECRET"])
   end
 
   def redirect_uri
