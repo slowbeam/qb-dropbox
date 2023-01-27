@@ -1,0 +1,2 @@
+class DropboxToken < ApplicationRecord
+end
